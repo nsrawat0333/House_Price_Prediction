@@ -1,0 +1,72 @@
+/* Bilingual labels style */
+.feature-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.feature-label .en {
+    font-weight: 500;
+    color: #5e72e4;
+}
+
+.feature-label .hi {
+    font-weight: normal;
+    color: #525f7f;
+    font-size: 0.9em;
+}
+
+/* Info tooltip for bilingual help */
+.feature-tooltip {
+    display: inline-block;
+    margin-left: 5px;
+    color: #adb5bd;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.feature-tooltip:hover {
+    color: #5e72e4;
+}
+
+/* Enhanced form inputs */
+.enhanced-input {
+    border: 1px solid #e4e7ed;
+    border-radius: 8px;
+    transition: all 0.3s;
+    background-color: #fff;
+}
+
+.enhanced-input:focus {
+    box-shadow: 0 0 0 3px rgba(94, 114, 228, 0.25);
+    border-color: #5e72e4;
+}
+
+/* Language toggle button */
+.language-toggle {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    z-index: 1000;
+    background: linear-gradient(135deg, #5e72e4, #825ee4);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.language-toggle:hover {
+    transform: scale(1.05);
+}
+
+.language-toggle:active {
+    transform: scale(0.95);
+}
