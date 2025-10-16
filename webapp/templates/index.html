@@ -4,14 +4,16 @@
 
 {% block content %}
 <!-- Hero Section -->
-<section class="text-white py-5" style="background: linear-gradient(135deg, #5e72e4, #825ee4);">
+<section class="hero text-white py-5">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-7">
-                <h1 class="display-4 fw-bold" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">House Price Predictor</h1>
-                <p class="lead">A machine learning model to predict house prices in California using various features.</p>
-                <div class="mt-4">
-                    <a href="#predictor" class="btn btn-light btn-lg me-2">
+            <div class="col-lg-7 animate-in" style="animation-delay: 0.2s;">
+                <h1 class="display-3 fw-bold mb-4" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">
+                    House Price Predictor
+                </h1>
+                <p class="lead fs-4 mb-5">Discover the perfect price for your dream home using our advanced AI-powered prediction model.</p>
+                <div class="mt-4 d-flex gap-3 justify-content-center justify-content-lg-start">
+                    <a href="#predictor" class="btn btn-light btn-lg">
                         <i class="fas fa-calculator me-2"></i>Make a Prediction
                     </a>
                     <a href="#visualizations" class="btn btn-outline-light btn-lg">
@@ -19,8 +21,14 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-5 text-center">
-                <img src="https://cdn-icons-png.flaticon.com/512/2329/2329093.png" alt="House Prediction" class="img-fluid" style="max-height: 250px; filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.2));">
+            <div class="col-lg-5 text-center animate-in" style="animation-delay: 0.4s;">
+                <div class="position-relative">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2329/2329093.png" alt="House Prediction" 
+                         class="img-fluid floating" 
+                         style="max-height: 300px; filter: drop-shadow(5px 5px 15px rgba(0,0,0,0.3));">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" 
+                         style="background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -29,25 +37,31 @@
 <!-- About Section -->
 <section class="py-5" id="about">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center mb-4">
-                <h2>About the Project</h2>
-                <hr class="mx-auto" style="width: 70px;">
-            </div>
+        <div class="section-header">
+            <h2 class="animate-in">About the Project</h2>
+            <p class="animate-in" style="animation-delay: 0.2s;">Discover how we leverage advanced machine learning to provide accurate house price predictions</p>
+            <hr class="mx-auto animate-in" style="animation-delay: 0.3s;">
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <h4 class="mb-3">
-                    <i class="fas fa-project-diagram feature-icon"></i>
-                    Project Overview
-                </h4>
-                <p>This project uses machine learning to predict house prices in California based on features like location, median income, and housing characteristics.</p>
-                <p>We've implemented several models including Linear Regression, Decision Tree, and Random Forest, with Random Forest providing the best performance.</p>
-                
-                <h4 class="mt-4 mb-3">
-                    <i class="fas fa-database feature-icon"></i>
-                    Dataset Information
-                </h4>
+        <div class="row g-4">
+            <div class="col-md-6 animate-in" style="animation-delay: 0.4s;">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4">
+                            <i class="fas fa-project-diagram feature-icon text-primary me-2"></i>
+                            Project Overview
+                        </h4>
+                        <p class="card-text">This project uses sophisticated machine learning algorithms to predict house prices in California based on features like location, median income, and housing characteristics.</p>
+                        <p class="card-text">We've implemented several models including Linear Regression, Decision Tree, and Random Forest, with Random Forest providing the best performance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 animate-in" style="animation-delay: 0.5s;">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4">
+                            <i class="fas fa-database feature-icon text-primary me-2"></i>
+                            Dataset Information
+                        </h4>
                 <p>The California Housing dataset contains information from the 1990 California census, including:</p>
                 <div class="row mt-3">
                     <div class="col-md-6">
